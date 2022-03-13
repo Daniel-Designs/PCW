@@ -5,36 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lugar</title>
     <link rel="stylesheet" type="text/css" href="./css/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="./css/stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="./css/fontello.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        
+    <header class="header" id="header">
         <div>
             <a href="index.html"><img src="./img/Coctel.png" alt="logo"></a>
+            <h1>Fiesta Alicante</h1>
         </div>
         <div>
-            <h1>Los mejores bares</h1><br>
-            <h3>No sabes donde ir por un trago</h3>
-            <h3>Te tenemos una solucion</h3>
-        </div>
-       
+            <h2>¿Quieres salir a conocer la vidad nocturna en Alicante pero no sabes donde?</h2><br>
+        </div>     
     </header>
     <div class="container logo-nav-container">
         <nav>
             <ul>
-                <li><a href="index.html"> <span aria-hidden="true" class="icon-home-1"></span><span class="icon-home-1">Inicio</span> </a></li>
-                <li><a href="buscar.html"> <span aria-hidden="true" class="icon-search"></span><span class="icon-search">Buscar</span> </a></li>
-                <li><a href="registro.html"> <span aria-hidden="true" class="icon-user-plus"></span><span class="icon-user-plus">Registro</span> </a></li>
-                <li><a href="login.html"> <span aria-hidden="true" class="icon-user"></span><span class="icon-user">Ingresar</span></a></li>
-                <li><a href="lugar.html"> <span aria-hidden="true" class="icon-food"></span><span class="icon-food">Lugar</span></a></li>
+                <li><a href="index.html"> <span aria-hidden="true" class="icon-home-1"></span><span>Inicio</span> </a></li>
+                <li><a href="buscar.html"> <span aria-hidden="true" class="icon-search"></span><span>Buscar</span> </a></li>
+                <li><a href="registro.html"> <span aria-hidden="true" class="icon-user-plus"></span><span>Registro</span> </a></li>
+                <li><a href="login.html"> <span aria-hidden="true" class="icon-user"></span><span>Ingresar</span></a></li>
+                <li><a href="lugar.html"> <span aria-hidden="true" class="icon-food"></span><span>Lugar</span></a></li>
+                <li><a href="nuevoLugar.html"> <span aria-hidden="true" class="icon-food"></span><span>Nuevo Lugar</span></a></li>
             </ul>
         
         </nav>
     </div>
+
+    <section class="lugar">
+        
+        <div class="informacion-container">    
+            <div class="dark"><p >Nombre: </p></div>
+            <div><p>Garaje Bar</p></div>    
+            <div class="dark"><p >Direccion: </p></div>
+            <div><p>Pl gabriel Miro, 14</p></div>
+            <div class="dark"><p >Poblacion: </p></div>
+            <div><p>Alicante</p></div>
+            <div class="dark"><p >Provincia: </p></div>
+            <div><p>Alicante</p></div>
+            <div class="dark"><p >Vaaloracion: </p></div>
+            <div><div>3 / 5 estrellas</div><div><a href="#coment">2 valoraciones </a></div> </div>
+            <div class="dark"><p >Comentario: </p></div>
+            <div><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit veniam libero eligendi, in delectus consequuntur doloremque?</p>
+            </div>
+            <div class="dark"><p >Etiquetas: </p></div>
+            <div><a href="buscar.html">Bar, </a><a href="buscar.html">Barato, </a><a href="buscar.html">Bonito, </a><a href="buscar.html">Lindo.</a></div>
+        </div>
+
+        <div>
+            <h4>Foto</h4> 
+            <br>
+            <hr>
+            <img src="./img/noPhoto.png" alt="Imagen del lugar">  
+            <hr>
+            <br>
+            <div class="center"><input class="botons" type="submit" value=" < Atras" id="atrasLugar"> Foto 1 de 3 <input class="botons" type="submit" value="Siguiete >" id="siguienteLugar"></div>
+            <br>
+        </div>
+        <div>
+            <section id="coment">
+
+                <h4>Comentarios</h4>
+                <br>
+                <hr>
+                <div class="container-Coment">
+                    <div>
+                        <img src="./img/perfil.png" alt="Imagen de perfil">
+                        
+                        <p>Nombre de usuario</p>
+                        <br>
+                    </div>
+                    <div>
+                        <h3>Vale la pena</h3>
+                        <br>
+                        <p>3 / 5 estrellas</p>
+                        <br>
+                        <p>Comentario mas largooooooooooo</p>
+                        <br>
+                        <hr>
+                        <br>
+                        <time datetime="2022-02-23">Miercoles 23, de Febreo de 2022</time>
+                    </div>
+    
+                    
+                </div>
+    
+                <div class="container-Coment">
+                    <div>
+                        <img src="./img/perfil.png" alt="Imagen de perfil">
+                        
+                        <p>Nombre de usuario</p>
+                        <br>
+                    </div>
+                    <div>
+                        <h3>Vale la pena</h3>
+                        <br>
+                        <Div>3 / 5 estrellas</Div>
+                        <br>
+                        <p>Comentario mas largooooooooooo</p>
+                        <br>
+                        <hr>
+                        <br>
+                        <time datetime="2022-02-23">Miercoles, 23 de Febreo de 2022</time>
+                    </div>
+    
+                    
+                </div>
+        </section>
+    
+        </div>
+            
+
+        <div> 
+            <h4>Valoracion </h4>
+            <br>
+            <hr>
+            <div>
+                <p>Deja una Valoracion</p>
+                <br>
+                <form action="#" class="comentario-form">
+                    <div><label for="comentTitulo">Titulo</label><input type="text" name="busqueda" id="comentTitulo" required></div>
+                    <br>
+                    <div><label for="comentarioLugar" id="labelComentario">Comentario</label><textarea name="caomentario" required id="comentarioLugar" cols="30" rows="5" maxlength="300"></textarea></div>
+                    <br>
+                    <p>Valoracion</p>
+                    <br>
+                    <div class="center"><input class="botons" type="reset" value="Limpiar" id="comentLimpiar"><input class="botons" type="submit" value="Publicar" id="publicarComent"></div>
+                    <br>
+                </form>
+            </div>
+            
+        </div>
+        
+    </Section>
+
     <footer>
-        <div> <p>&copy; Pagina creada por @Daniel  <time datetime="2022"> 2022 </time>  <a href="acerca.html"> Contacto</a>   </p></div>
+        <div> <p>&copy; Pagina creada por @Daniel Antonio Morales Juarez Fecha: <time datetime="2022">2022 </time><a href="acerca.html">----------------- Contacto -------------------->  </a><a href="#header"><span aria-hidden="true" class="icon-up"></span></a></p></div>
     </footer>
     
 </body>

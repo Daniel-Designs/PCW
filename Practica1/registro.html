@@ -5,37 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     <link rel="stylesheet" type="text/css" href="./css/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="./css/stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="./css/fontello.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        
+    <header class="header" id="header">
         <div>
             <a href="index.html"><img src="./img/Coctel.png" alt="logo"></a>
+            <h1>Fiesta Alicante</h1>
         </div>
         <div>
-            <h1>Los mejores bares</h1><br>
-            <h3>No sabes donde ir por un trago</h3>
-            <h3>Te tenemos una solucion</h3>
-        </div>
-       
+            <h2>¿Quieres salir a conocer la vidad nocturna en Alicante pero no sabes donde?</h2><br>
+        </div>     
     </header>
     <div class="container logo-nav-container">
         <nav>
             <ul>
-                <li><a href="index.html"> <span aria-hidden="true" class="icon-home-1"></span><span class="icon-home-1">Inicio</span> </a></li>
-                <li><a href="buscar.html"> <span aria-hidden="true" class="icon-search"></span><span class="icon-search">Buscar</span> </a></li>
-                <li><a href="registro.html"> <span aria-hidden="true" class="icon-user-plus"></span><span class="icon-user-plus">Registro</span> </a></li>
-                <li><a href="login.html"> <span aria-hidden="true" class="icon-user"></span><span class="icon-user">Ingresar</span></a></li>
-                <li><a href="lugar.html"> <span aria-hidden="true" class="icon-food"></span><span class="icon-food">Lugar</span></a></li>
+                <li><a href="index.html"> <span aria-hidden="true" class="icon-home-1"></span><span>Inicio</span> </a></li>
+                <li><a href="buscar.html"> <span aria-hidden="true" class="icon-search"></span><span>Buscar</span> </a></li>
+                <li><a href="registro.html"> <span aria-hidden="true" class="icon-user-plus"></span><span>Registro</span> </a></li>
+                <li><a href="login.html"> <span aria-hidden="true" class="icon-user"></span><span>Ingresar</span></a></li>
+                <li><a href="lugar.html"> <span aria-hidden="true" class="icon-food"></span><span>Lugar</span></a></li>
+                <li><a href="nuevoLugar.html"> <span aria-hidden="true" class="icon-food"></span><span>Nuevo Lugar</span></a></li>
             </ul>
         
         </nav>
     </div>
-    <footer>
-        <div> <p>&copy; Pagina creada por @Daniel  <time datetime="2022"> 2022 </time>  <a href="acerca.html"> Contacto</a>   </p></div>
+
+    <div class="Form-Register">
+        
+        <form action="#">
+            <div><input type="text" name="nombres" id="nombres" title=" no debe contener espacios en blanco y su longitud no puede ser menor de 6 ni mayor de 20 caracteres. Sólo se podrán utilizar números y letras (mayúsculas y/o minúsculas). No puede empezar por un número."
+                 placeholder="Ingrese su Nombre" minlength="6" maxlength="20" autofocus required pattern="[a-zA-Z]+[a-zA-Z0-9]+"></div>
+            <div><input type="password" name="contraseña" id="cont" placeholder="Ingrese su Contraseña" title="no debe tener espacios en blanco y sólo se pueden utilizar letras mayúsculas, minúsculas, números y los caracteres - _ ." 
+                minlength="6" maxlength="20" required pattern="[a-z0-9._-]+"></div>
+            <div><input type="password" name="confirmarContraseña" id="cont2" placeholder="Repite la Contraseña" ></div>
+            <div><label for="foto">Foto</label><input type="file" name="foto" id="foto" accept="image/*"> <img src="./img/noPhoto.png" alt="Foto perfil"><label for="ele"><span aria-hidden="true" class="icon-trash"></span></label><input type="button" value="foto" id="ele"></div>
+            <input class="botons" type="submit" value="Registrar" id="regiter-butom">
+            <div><p><a href="login.html">¿Ya tengo Cuenta?</a></p></div>
+        </form>
+        
+    </div>
+      <footer>
+        <div> <p>&copy; Pagina creada por @Daniel Antonio Morales Juarez Fecha: <time datetime="2022">2022 </time><a href="acerca.html">----------------- Contacto -------------------->  </a><a href="#header"><span aria-hidden="true" class="icon-up"></span></a></p></div>
     </footer>
-    
 </body>
 </html>

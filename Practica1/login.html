@@ -5,37 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" type="text/css" href="./css/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="./css/stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="./css/fontello.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        
+    <header class="header" id="header">
         <div>
             <a href="index.html"><img src="./img/Coctel.png" alt="logo"></a>
+            <h1>Fiesta Alicante</h1>
         </div>
         <div>
-            <h1>Los mejores bares</h1><br>
-            <h3>No sabes donde ir por un trago</h3>
-            <h3>Te tenemos una solucion</h3>
-        </div>
-       
+            <h2>¿Quieres salir a conocer la vidad nocturna en Alicante pero no sabes donde?</h2><br>
+        </div>     
     </header>
     <div class="container logo-nav-container">
         <nav>
             <ul>
-                <li><a href="index.html"> <span aria-hidden="true" class="icon-home-1"></span><span class="icon-home-1">Inicio</span> </a></li>
-                <li><a href="buscar.html"> <span aria-hidden="true" class="icon-search"></span><span class="icon-search">Buscar</span> </a></li>
-                <li><a href="registro.html"> <span aria-hidden="true" class="icon-user-plus"></span><span class="icon-user-plus">Registro</span> </a></li>
-                <li><a href="login.html"> <span aria-hidden="true" class="icon-user"></span><span class="icon-user">Ingresar</span></a></li>
-                <li><a href="lugar.html"> <span aria-hidden="true" class="icon-food"></span><span class="icon-food">Lugar</span></a></li>
+                <li><a href="index.html"> <span aria-hidden="true" class="icon-home-1"></span><span>Inicio</span> </a></li>
+                <li><a href="buscar.html"> <span aria-hidden="true" class="icon-search"></span><span>Buscar</span> </a></li>
+                <li><a href="registro.html"> <span aria-hidden="true" class="icon-user-plus"></span><span>Registro</span> </a></li>
+                <li><a href="login.html"> <span aria-hidden="true" class="icon-user"></span><span>Ingresar</span></a></li>
+                <li><a href="lugar.html"> <span aria-hidden="true" class="icon-food"></span><span>Lugar</span></a></li>
+                <li><a href="nuevoLugar.html"> <span aria-hidden="true" class="icon-food"></span><span>Nuevo Lugar</span></a></li>
             </ul>
         
         </nav>
     </div>
+    <section class="form-login">
+        <h2>LOGIN</h2>
+        <form action="#">
+            <label for="userName">Nombre de Usario</label><input type="text" name="Nombre de Uusuario" id="userName" autofocus required>
+            <br>
+            <label for="password">Contraseña</label><input type="password" name="pwd" id="password" required>
+            <br>
+            <label for="CheckBox">Recordar Contraseña</label><span><input type="checkbox" name="checkbox" id="CheckBox"></span>
+            <div><input type="submit" value="Iniciar Sesión" id="login-butom"></div>
+            <p><a href="registro.html">¿Aun no tengo Cuenta?</a></p>
+
+        </form>
+    </section>
     <footer>
-        <div> <p>&copy; Pagina creada por @Daniel  <time datetime="2022"> 2022 </time>  <a href="acerca.html"> Contacto</a>   </p></div>
+        <div> <p>&copy; Pagina creada por @Daniel Antonio Morales Juarez Fecha: <time datetime="2022">2022 </time><a href="acerca.html">----------------- Contacto -------------------->  </a><a href="#header"><span aria-hidden="true" class="icon-up"></span></a></p></div>
     </footer>
-    
 </body>
 </html>

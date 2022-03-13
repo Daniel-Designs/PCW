@@ -5,36 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buscar</title>
     <link rel="stylesheet" type="text/css" href="./css/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="./css/stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="./css/fontello.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        
+    <header class="header" id="header">
         <div>
             <a href="index.html"><img src="./img/Coctel.png" alt="logo"></a>
+            <h1>Fiesta Alicante</h1>
         </div>
         <div>
-            <h1>Los mejores bares</h1><br>
-            <h3>No sabes donde ir por un trago</h3>
-            <h3>Te tenemos una solucion</h3>
-        </div>
-       
+            <h2>¿Quieres salir a conocer la vidad nocturna en Alicante pero no sabes donde?</h2><br>
+        </div>     
     </header>
     <div class="container logo-nav-container">
         <nav>
             <ul>
-                <li><a href="index.html"> <span aria-hidden="true" class="icon-home-1"></span><span class="icon-home-1">Inicio</span> </a></li>
-                <li><a href="buscar.html"> <span aria-hidden="true" class="icon-search"></span><span class="icon-search">Buscar</span> </a></li>
-                <li><a href="registro.html"> <span aria-hidden="true" class="icon-user-plus"></span><span class="icon-user-plus">Registro</span> </a></li>
-                <li><a href="login.html"> <span aria-hidden="true" class="icon-user"></span><span class="icon-user">Ingresar</span></a></li>
-                <li><a href="lugar.html"> <span aria-hidden="true" class="icon-food"></span><span class="icon-food">Lugar</span></a></li>
+                <li><a href="index.html"> <span aria-hidden="true" class="icon-home-1"></span><span>Inicio</span> </a></li>
+                <li><a href="buscar.html"> <span aria-hidden="true" class="icon-search"></span><span>Buscar</span> </a></li>
+                <li><a href="registro.html"> <span aria-hidden="true" class="icon-user-plus"></span><span>Registro</span> </a></li>
+                <li><a href="login.html"> <span aria-hidden="true" class="icon-user"></span><span>Ingresar</span></a></li>
+                <li><a href="lugar.html"> <span aria-hidden="true" class="icon-food"></span><span>Lugar</span></a></li>
+                <li><a href="nuevoLugar.html"> <span aria-hidden="true" class="icon-food"></span><span>Nuevo Lugar</span></a></li>
             </ul>
         
         </nav>
     </div>
+    <section class="Form-Buscar">
+        <h4>Opciones de busqueda</h4>
+        <form action="#">
+            <div><label for="busqueda"><span aria-hidden="true" class="icon-search">Buscar</span></label><input type="text" name="busqueda" id="busqueda" autofocus></div>
+            <div><label for="Provincia"><span aria-hidden="true" class="icon-location"></span>Ubicacion</label><input type="text" name="provincia" id="Provincia" placeholder="(Poblacion o  provicia)"></div>
+            <div><label for="Etiqueta"><span aria-hidden="true" class="icon-tag"></span>Estiquetas</label><input type="text" name="Etiqueta" id="Etiqueta" placeholder="Etiqueta"></div>
+            <div><span aria-hidden="true" class="icon-star"></span> <label for="Desde">Desde</label><input type="text" name="Desde" id="Desde" placeholder="0"><label for="hasta">hasta</label><input type="text" name="hasta" id="hasta" placeholder="5"></div>
+            <div><input class="botons1" type="reset" value="Limpiar" id="clear-butom"><input class="botons1" type="submit" value="Buscar" id="regiter-butom"></div>
+
+        </form>
+        
+      </section>
+      <br>
+    <hr>
+    <br>
+    <div class="betterRate">
+        <div>
+            <h5> <a href="lugar.html">Nombre del lugar *mas texto para probar tooltip y asi poder comprabar que funciona*</a><span class="tooltiptext">Nombre del Lugar en tooltiptext *mas texto para probar tooltipasi poder comprabar que funciona*</span> </h5>
+            <a href="lugar.html"><img src="./img/Camara.png" alt="Imagen del lugar"></a>
+            <p><span aria-hidden="true" class="icon-star"></span> <span aria-hidden="true" class="icon-star"></span> <a href="lugar.html"> Reseñas 2</a>   San Vicente del Raspeig Alicante de Alacant<span class="tooltipAbajo">San Vicente del Raspeig Alicante de Alacant</span></p>
+        </div>
+        <div>
+            <h5><a href="lugar.html">Nombre del lugar</a><span class="tooltiptext">Nombre del Lugar en tooltiptext</span></h5>
+            <a href="lugar.html"><img src="./img/Camara.png" alt="Imagen del lugar"></a>
+            <p><span aria-hidden="true" class="icon-star"></span> <span aria-hidden="true" class="icon-star"></span> <a href="lugar.html"> Reseñas 2</a>   San Vicente del Raspeig Alicante de Alacant<span class="tooltipAbajo">San Vicente del Raspeig Alicante de Alacant</span></p>
+        </div>
+        <div>
+            <h5><a href="lugar.html">Nombre del lugar</a><span class="tooltiptext">Nombre del Lugar en tooltiptext</span></h5>
+            <a href="lugar.html"><img src="./img/Camara.png" alt="Imagen del lugar"></a>
+            <p><span aria-hidden="true" class="icon-star"></span> <span aria-hidden="true" class="icon-star"></span> <a href="lugar.html"> Reseñas 2</a>   San Vicente del Raspeig Alicante de Alacant<span class="tooltipAbajo">San Vicente del Raspeig Alicante de Alacant</span></p>
+        </div>
+        <div>
+            <h5><a href="lugar.html">Nombre del lugar *mas texto para probar tooltip y asi poder comprabar que funciona*</a><span class="tooltiptext">Nombre del Lugar en tooltiptext *mas texto para probar tooltipasi poder comprabar que funciona*</span></h5>
+            <a href="lugar.html"><img src="./img/Camara.png" alt="Imagen del lugar"></a>
+            <p><span aria-hidden="true" class="icon-star"></span> <span aria-hidden="true" class="icon-star"></span> <a href="lugar.html"> Reseñas 2</a>   San Vicente del Raspeig Alicante de Alacant<span class="tooltipAbajo">San Vicente del Raspeig Alicante de Alacant</span></p>
+        </div>
+        <div>
+            <h5><a href="lugar.html">Nombre del lugar *mas texto para probar tooltip y asi poder comprabar que funciona*</a><span class="tooltiptext">Nombre del Lugar en tooltiptext *mas texto para probar tooltipasi poder comprabar que funciona*</span></h5>
+            <a href="lugar.html"><img src="./img/Camara.png" alt="Imagen del lugar"></a>
+            <p><span aria-hidden="true" class="icon-star"></span> <span aria-hidden="true" class="icon-star"></span> <a href="lugar.html"> Reseñas 2</a>   San Vicente del Raspeig Alicante de Alacant<span class="tooltipAbajo">San Vicente del Raspeig Alicante de Alacant</span></p>        </div>
+        <div>
+            <h5><a href="lugar.html">Nombre del lugar</a><span class="tooltiptext">Nombre del Lugar en tooltiptext</span></h5>
+            <a href="lugar.html"><img src="./img/Camara.png" alt="Imagen del lugar"></a>
+            <p><span aria-hidden="true" class="icon-star"></span> <span aria-hidden="true" class="icon-star"></span> <a href="lugar.html"> Reseñas 2</a>   San Vicente del Raspeig Alicante de Alacant<span class="tooltipAbajo">San Vicente del Raspeig Alicante de Alacant</span></p>
+        </div>
+    </div>
+    <div class = "seeMore"><a href="lugar.html" class="button">Ver mas ...</a></div>
+
     <footer>
-        <div> <p>&copy; Pagina creada por @Daniel  <time datetime="2022"> 2022 </time>  <a href="acerca.html"> Contacto</a>   </p></div>
+        <div> <p>&copy; Pagina creada por @Daniel Antonio Morales Juarez Fecha: <time datetime="2022">2022 </time><a href="acerca.html">----------------- Contacto -------------------->  </a><a href="#header"><span aria-hidden="true" class="icon-up"></span></a></p></div>
     </footer>
     
 </body>
