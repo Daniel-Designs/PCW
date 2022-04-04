@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body > section{
+    width: 20em;
+    padding: .10 em;
+    border: 1px solid #000;
+    margin: .5em auto;
+}
+
+    section > article > footer{
+        text-align: center;
+    }
+
+    section > article > footer > button{
+        margin: .2m .5em;
+    }
+
+
+    .destacar{
+        background-color: aqua;
+    }
