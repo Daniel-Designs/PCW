@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <script src="./codigo.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <script src="./codigo.js"></script>
+</head>
+<body>
+  <h1>Ejemplo</h1>
+    <section><h2>Lugares</h2>
+    <ul id="lugares"></ul>
+    <footer><button>Pedir Lugares</button></footer>
+  </section>
+  <section><h2>Login</h2>
+    <form onsubmit="return hacerLogin(this);">
+      <label for="login"></label><input type="text" name="login" id="login">
+      <label for="pwd"></label><input type="password" name="pwd" id="pwd">
+      <input type="submit" name="" id="">
+    </form>  
+  </section>
+  <button onclick="mostrarMensaje();">Mensaje Modal</button>
+  <dialog id="msjModal">
+    <form method="dialog">
+      <div> <label for="login">Login2</label><input type="text" name="login" id="login2"> </div>
+      <div><label for="pwd2">Login2</label><input type="text" name="pwd" id="pwd2"></div>
+      <div><button value="login">Aceptar</button>
+           <button value="login">Aceptar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script>pedirLugares()</script>
+</body>
+</html>
